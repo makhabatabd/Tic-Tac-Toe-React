@@ -1,38 +1,42 @@
-.App {
+.app {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.board {
+  display: inline-block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.board-row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 1px solid #999;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.game-info {
+  margin-top: 1rem;
+}
+
+.game-info div {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.game-info button {
+  padding: 0.5rem 1rem; 
+  font-size: 1rem;
+  cursor: pointer;
 }
